@@ -2,13 +2,13 @@
 
 namespace Extension\Menu\Repository;
 
-use BinCMS\RepositoryTrait\ExtendRepositoryTrait;
+use BinCMS\RepositoryTrait\RepositoryExtendTrait;
+use BinCMS\RepositoryTrait\RepositoryMaterializedPathFilteredTrait;
 use Extension\Menu\Repository\Interfaces\MenuRepositoryInterface;
-use Extension\Shop\Repository\Traits\MaterializedPathRepositoryFindAllWithFilteredMethod;
 use Gedmo\Tree\Document\MongoDB\Repository\MaterializedPathRepository;
 
 class MenuRepository extends MaterializedPathRepository implements MenuRepositoryInterface
 {
-    use ExtendRepositoryTrait;
-    use MaterializedPathRepositoryFindAllWithFilteredMethod;
+    use RepositoryExtendTrait;
+    use RepositoryMaterializedPathFilteredTrait;
 } 
