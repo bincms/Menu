@@ -1,0 +1,1 @@
+"use strict";var MenuServiceProvider=Class.extend({$get:["$resource",function(e){var r="/api/extension/Menu";return e(r+"/:id",null,{update:{method:"PUT"}})}]});angular.module("bincms.rest").provider("$menuService",MenuServiceProvider);
