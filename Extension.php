@@ -48,4 +48,16 @@ class Extension extends BaseExtension
     {
 
     }
+
+    public function doInstall(Application $app)
+    {
+
+    }
+
+    public function doUpdate(Application $app)
+    {
+
+        var_dump($app['extension.menu.repository.menu']);
+
+    }
 }
