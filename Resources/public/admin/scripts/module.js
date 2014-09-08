@@ -26,7 +26,7 @@ angular.adminModule('menu', [
                 url: '/list',
                 views: {
                     'content@layout': {
-                        templateUrl: 'admin/menu/list.html',
+                        templateUrl: '/admin/menu/list.html',
                         controller: 'MenuListExtensionController'
                     }
                 }
@@ -35,7 +35,7 @@ angular.adminModule('menu', [
                 url: '/create',
                 views: {
                     'content@layout': {
-                        templateUrl: 'admin/menu/create.html',
+                        templateUrl: '/admin/menu/create.html',
                         controller: 'MenuCreateExtensionController'
                     }
                 }
@@ -44,7 +44,7 @@ angular.adminModule('menu', [
                 url: '/update/:id',
                 views: {
                     'content@layout': {
-                        templateUrl: 'admin/menu/update.html',
+                        templateUrl: '/admin/menu/update.html',
                         controller: 'MenuUpdateExtensionController',
                         resolve: {
                             menu: ['$menuService', '$stateParams', function (menuService, stateParams) {
